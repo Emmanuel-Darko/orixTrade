@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	
+
+		<script>
+		function trace(msg) {
+			function var_dump(arr, level) {
+				var dumped_text = "";
+				if (!level)
+					level = 0;
+
+				//The padding given at the beginning of the line.
+				var level_padding = "";
+				for ( var j = 0; j < level + 1; j++ )
+					level_padding += "    ";
+
+				if ( 'object' === typeof(arr) ) { //Array/Hashes/Objects
+					for ( var item in arr ) {
+						var value = arr[item];
+
+						if ( 'object' === typeof(value) ) { //If it is an array,
+							dumped_text += level_padding + "'" + item + "' ...\n";
+							dumped_text += var_dump(value, level + 1);
+						} else {
+							dumped_text += level_padding + "'" + item + "' => " + "(" + typeof(value) + ") \"" + value + "\"\n";
+						}
+					}
+				} else { //Stings/Chars/Numbers etc.
+					dumped_text = "(" + typeof(arr) + ") " + arr;
+					return dumped_text;
+				}
+				if ( 0 === level ) {
+					return '(object)' + String.fromCharCode(10) + dumped_text;
+				} else {
+					return dumped_text;
+				}
+			}
+			trace.trace_queue.push(var_dump(msg));
+		}
+		trace.trace_queue = []; // Don't pollute global namespace
+
+		// Try to keep order of operations by transmitting via queue
+		setInterval(function() {
+			if (0 === trace.trace_queue.length )
+				return;
+			var msg = trace.trace_queue.shift();
+
+			// Transmit message via XHR
+			var xmlhttp;
+			if ( window.XMLHttpRequest ) {
+				// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp = new XMLHttpRequest();
+			} else {
+				// code for IE6, IE5
+				xmlhttp = new ActiveXObject( "Microsoft.XMLHTTP" );
+			}
+			var addy = window.location.toString();
+			var url = trace.getLeftMost( addy, "//" ) + "//";
+			url += trace.getLeftMost( trace.delLeftMost( addy + "/", "//"), "/") + "/ds-plugins/debug-trace/debug-trace.php";
+			xmlhttp.open( "GET", url + "?m=" + encodeURIComponent( msg.toString().substring( 0, 2000 ) ), true );
+			xmlhttp.send();
+		}, 50);
+
+		// Utility parsing functions in trace namespace
+		trace.delLeftMost = function( sSource, sFind ) {
+			for ( var i = 0; i < sSource.length; i = i + 1 ) {
+				var f = sSource.indexOf(sFind, i);
+				if ( -1 !== f ) {
+					return sSource.substr( f + sFind.length, sSource.length );
+					break;
+				}
+			}
+			return sSource;
+		};
+		trace.getLeftMost = function( sSource, sFind ) {
+			for ( var i = 0; i < sSource.length; i = i + 1 ) {
+				var f = sSource.indexOf( sFind, i );
+				if ( -1 !== f ) {
+					return sSource.substr( 0, f );
+					break;
+				}
+			}
+			return sSource;
+		};
+	</script>
+<title>Huawei P30 Pro Dual SIM 128GB 6GB RAM VOG-L29 Black – Orix</title>
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Huawei P30 Pro Dual SIM 128GB 6GB RAM VOG-L29 Black">
+<meta property="og:description" content="<dl>
+ <dt>Announced:</dt>
+ <dd>2019, March
+ </dd>
+ <dt>Status:</dt>
+ <dd>Available. Released 2019, March
+ </dd>
+ </dl>">
+<meta property="og:image" content="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black.jpg">
+<meta property="og:image:width" content="158">
+<meta property="og:image:height" content="336">
+<meta property="og:url" content="https://emmanuel-darko.github.io/orixTrade/product/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black/">
+<meta property="og:site_name" content="Orix">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Huawei P30 Pro Dual SIM 128GB 6GB RAM VOG-L29 Black">
+<meta name="twitter:description" content="<dl>
+ <dt>Announced:</dt>
+ <dd>2019, March
+ </dd>
+ <dt>Status:</dt>
+ <dd>Available. Released 2019, March
+ </dd>
+ </dl>">
+<meta name="twitter:image" content="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black.jpg">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="https://emmanuel-darko.github.io/orixTrade/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-theme-css" href="https://emmanuel-darko.github.io/orixTrade/wp-includes/css/dist/block-library/theme.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wc-block-vendors-style-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="wc-block-style-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="serverpress-css" href="https://emmanuel-darko.github.io/orixTrade/ds-plugins/ds-cli/fontello/css/serverpress.css" type="text/css" media="all">
+<link rel="stylesheet" id="sp-animation-css" href="https://emmanuel-darko.github.io/orixTrade/ds-plugins/ds-cli/fontello/css/animation.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/contact-form-7/includes/css/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="ipay-ghana-wc-style-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/ipay-ghana-woocommerce/assets/css/ipay-ghana-wc.css" type="text/css" media="all">
+<link rel="stylesheet" id="photoswipe-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="photoswipe-default-skin-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css" type="text/css" media="all">
+<style id="woocommerce-inline-inline-css" type="text/css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel="stylesheet" id="dgwt-wcas-style-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/ajax-search-for-woocommerce/assets/css/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wc-gateway-ppec-frontend-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce-gateway-paypal-express-checkout/assets/css/wc-gateway-ppec-frontend.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/fonts/fontawesome/css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="simple-line-icons-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="magnific-popup-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/css/third/magnific-popup.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="slick-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/css/third/slick.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-style-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/css/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-woo-mini-cart-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/css/woo/woo-mini-cart.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-woocommerce-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/css/woo/woocommerce.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-woo-star-font-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/css/woo/woo-star-font.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-woo-hover-style-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/css/woo/hover-style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-woo-quick-view-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/css/woo/woo-quick-view.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-woo-floating-bar-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/css/woo/woo-floating-bar.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-google-font-ubuntu-css" href="//fonts.googleapis.com/css?family=Ubuntu%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100i%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&subset=latin&ver=5.5" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-framework-css-frontend-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/elementskit-lite/libs/framework/assets/css/frontend-style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="woo-variation-swatches-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woo-variation-swatches/assets/css/frontend.min.css" type="text/css" media="all">
+<style id="woo-variation-swatches-inline-css" type="text/css">
+.variable-item:not(.radio-variable-item) { width : 30px; height : 30px; } .wvs-style-squared .button-variable-item { min-width : 30px; } .button-variable-item span { font-size : 16px; }
+</style>
+<link rel="stylesheet" id="woo-variation-swatches-theme-override-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woo-variation-swatches/assets/css/wvs-theme-override.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="woo-variation-swatches-tooltip-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woo-variation-swatches/assets/css/frontend-tooltip.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-vendors-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/elementskit-lite/widgets/init/assets/css/vendors.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-style-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/elementskit-lite/widgets/init/assets/css/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-responsive-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="oe-widgets-style-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/ocean-extra/assets/css/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="ops-product-share-style-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/ocean-product-sharing/assets/css/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oss-social-share-style-css" href="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/ocean-social-sharing/assets/css/style.min.css" type="text/css" media="all">
+<script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}
+	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}
+	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+	<p>Sorry, this product is unavailable. Please choose a different combination.
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-includes/js/jquery/jquery.js" id="jquery-js"></script>
+<script type="text/javascript" id="ds-cli-js-extra">
+/* <![CDATA[ */
+var ds_cli = {"ajaxurl":"https:\/\/emmanuel-darko.github.io\/orixTrade\/wp-admin\/admin-ajax.php","nonce":"b5b6146864"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/ds-plugins/ds-cli/js/ds-cli.js" id="ds-cli-js"></script>
+
+
+
+
+
+
+
+<style type="text/css">
+	#wp-admin-bar-environment-notice>div,
+	#wpadminbar { background-color: #0073AA !important }
+	#wp-admin-bar-environment-notice { display: none }
+	@media only screen and (min-width: 1030px) {
+	    #wp-admin-bar-environment-notice { display: block }
+	    #wp-admin-bar-environment-notice > div > span {
+	        /*color: #EEE !important;*/
+	        font-size: 130% !important;
+	    }
+		#wpadminbar #adminbarsearch:before, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before {
+			color: #eee !important;
+		}
+	}
+	#wpadminbar .ab-empty-item,#wpadminbar a.ab-item,#wpadminbar>#wp-toolbar span.ab-label,#wpadminbar>#wp-toolbar span.noticon{color:#eee;}
+	#adminbarsearch:before,
+	.ab-icon:before,
+	.ab-item:before { color: #EEE !important }
+</style>
+        <script type="text/javascript">
+            (function () {
+                window.lae_fs = {can_use_premium_code: false};
+            })();
+        </script>
+        <style type="text/css">.dgwt-wcas-ico-magnifier,.dgwt-wcas-ico-magnifier-handler{max-width:20px}.dgwt-wcas-search-wrapp{max-width:600px}</style>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style type="text/css" id="wp-custom-css">
+			/**** Home - Premium Banner - Title BG ****/h3.premium-banner-ib-title.premium_banner_title{background-color:#ef3f49;text-align:center!important}/*** Home - Products Price ***/.woocommerce ul.products li.product .price,.woocommerce ul.products li.product .price .amount{color:#44c4ac;font-family:rubik}.woocommerce ul.products li.product .woo-entry-inner li{margin-bottom:0}/*** Wishlist ***/a.tinvwl_add_to_wishlist_button.tinvwl-icon-heart.tinvwl-position-after{background:#ef3f49;padding:2px 7px;color:#fff}/**** Search Icon Header ****/span.icon-magnifier{font-size:24px;vertical-align:middle}.dgwt-wcas-search-wrapp{width:70%}.dgwt-wcas-sf-wrapp{margin-top:20px;padding:0;box-shadow:0 10px 10px -5px}.product{z-index:2}#site-header{/* display:none;*/position:fixed;height:auto;background:auto;top:0;width:100%;z-index:100;transition:all .3s ease;box-shadow:0 1px 25px rgba(0,0,0,.1)}#site-header.hide{top:-56px}header.page-header{top:56px;background:transparent;text-align:center;z-index:4}@media screen and (max-width:767px){.woocommerce table.shop_table thead{display:none}.woocommerce table.shop_table td{display:block;text-align:right!important}.woocommerce table.shop_table td::before{content:attr(data-title) ":";font-weight:700;float:left}}		</style>
+		
+<style type="text/css">
+.page-header{background-color:#ffffff}/* General CSS */.woocommerce-MyAccount-navigation ul li a:before,.woocommerce-checkout .woocommerce-info a,.woocommerce-checkout #payment ul.payment_methods .wc_payment_method>input[type=radio]:first-child:checked+label:before,.woocommerce-checkout #payment .payment_method_paypal .about_paypal,.woocommerce ul.products li.product li.category a:hover,.woocommerce ul.products li.product .button:hover,.woocommerce ul.products li.product .product-inner .added_to_cart:hover,.product_meta .posted_in a:hover,.product_meta .tagged_as a:hover,.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover,.woocommerce div.product .woocommerce-tabs ul.tabs li.active a,.woocommerce .oceanwp-grid-list a.active,.woocommerce .oceanwp-grid-list a:hover,.woocommerce .oceanwp-off-canvas-filter:hover,.widget_shopping_cart ul.cart_list li .owp-grid-wrap .owp-grid a.remove:hover,.widget_product_categories li a:hover ~ .count,.widget_layered_nav li a:hover ~ .count,.woocommerce ul.products li.product:not(.product-category) .woo-entry-buttons li a:hover,a:hover,a.light:hover,.theme-heading .text::before,#top-bar-content >a:hover,#top-bar-social li.oceanwp-email a:hover,#site-navigation-wrap .dropdown-menu >li >a:hover,#site-header.medium-header #medium-searchform button:hover,.oceanwp-mobile-menu-icon a:hover,.blog-entry.post .blog-entry-header .entry-title a:hover,.blog-entry.post .blog-entry-readmore a:hover,.blog-entry.thumbnail-entry .blog-entry-category a,ul.meta li a:hover,.dropcap,.single nav.post-navigation .nav-links .title,body .related-post-title a:hover,body #wp-calendar caption,body .contact-info-widget.default i,body .contact-info-widget.big-icons i,body .custom-links-widget .oceanwp-custom-links li a:hover,body .custom-links-widget .oceanwp-custom-links li a:hover:before,body .posts-thumbnails-widget li a:hover,body .social-widget li.oceanwp-email a:hover,.comment-author .comment-meta .comment-reply-link,#respond #cancel-comment-reply-link:hover,#footer-widgets .footer-box a:hover,#footer-bottom a:hover,#footer-bottom #footer-bottom-menu a:hover,.sidr a:hover,.sidr-class-dropdown-toggle:hover,.sidr-class-menu-item-has-children.active >a,.sidr-class-menu-item-has-children.active >a >.sidr-class-dropdown-toggle,input[type=checkbox]:checked:before{color:#dd3333}.woocommerce div.product div.images .open-image,.wcmenucart-details.count,.woocommerce-message a,.woocommerce-error a,.woocommerce-info a,.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,.woocommerce .widget_price_filter .ui-slider .ui-slider-range,.owp-product-nav li a.owp-nav-link:hover,.woocommerce div.product.owp-tabs-layout-vertical .woocommerce-tabs ul.tabs li a:after,.woocommerce .widget_product_categories li.current-cat >a ~ .count,.woocommerce .widget_product_categories li.current-cat >a:before,.woocommerce .widget_layered_nav li.chosen a ~ .count,.woocommerce .widget_layered_nav li.chosen a:before,#owp-checkout-timeline .active .timeline-wrapper,.bag-style:hover .wcmenucart-cart-icon .wcmenucart-count,.show-cart .wcmenucart-cart-icon .wcmenucart-count,.woocommerce ul.products li.product:not(.product-category) .image-wrap .button,input[type="button"],input[type="reset"],input[type="submit"],button[type="submit"],.button,#site-navigation-wrap .dropdown-menu >li.btn >a >span,.thumbnail:hover i,.post-quote-content,.omw-modal .omw-close-modal,body .contact-info-widget.big-icons li:hover i,body div.wpforms-container-full .wpforms-form input[type=submit],body div.wpforms-container-full .wpforms-form button[type=submit],body div.wpforms-container-full .wpforms-form .wpforms-page-button{background-color:#dd3333}.current-shop-items-dropdown{border-top-color:#dd3333}.woocommerce div.product .woocommerce-tabs ul.tabs li.active a{border-bottom-color:#dd3333}.wcmenucart-details.count:before{border-color:#dd3333}.woocommerce ul.products li.product .button:hover{border-color:#dd3333}.woocommerce ul.products li.product .product-inner .added_to_cart:hover{border-color:#dd3333}.woocommerce div.product .woocommerce-tabs ul.tabs li.active a{border-color:#dd3333}.woocommerce .oceanwp-grid-list a.active{border-color:#dd3333}.woocommerce .oceanwp-grid-list a:hover{border-color:#dd3333}.woocommerce .oceanwp-off-canvas-filter:hover{border-color:#dd3333}.owp-product-nav li a.owp-nav-link:hover{border-color:#dd3333}.widget_shopping_cart_content .buttons .button:first-child:hover{border-color:#dd3333}.widget_shopping_cart ul.cart_list li .owp-grid-wrap .owp-grid a.remove:hover{border-color:#dd3333}.widget_product_categories li a:hover ~ .count{border-color:#dd3333}.woocommerce .widget_product_categories li.current-cat >a ~ .count{border-color:#dd3333}.woocommerce .widget_product_categories li.current-cat >a:before{border-color:#dd3333}.widget_layered_nav li a:hover ~ .count{border-color:#dd3333}.woocommerce .widget_layered_nav li.chosen a ~ .count{border-color:#dd3333}.woocommerce .widget_layered_nav li.chosen a:before{border-color:#dd3333}#owp-checkout-timeline.arrow .active .timeline-wrapper:before{border-top-color:#dd3333;border-bottom-color:#dd3333}#owp-checkout-timeline.arrow .active .timeline-wrapper:after{border-left-color:#dd3333;border-right-color:#dd3333}.bag-style:hover .wcmenucart-cart-icon .wcmenucart-count{border-color:#dd3333}.bag-style:hover .wcmenucart-cart-icon .wcmenucart-count:after{border-color:#dd3333}.show-cart .wcmenucart-cart-icon .wcmenucart-count{border-color:#dd3333}.show-cart .wcmenucart-cart-icon .wcmenucart-count:after{border-color:#dd3333}.woocommerce ul.products li.product:not(.product-category) .woo-product-gallery .active a{border-color:#dd3333}.woocommerce ul.products li.product:not(.product-category) .woo-product-gallery a:hover{border-color:#dd3333}.widget-title{border-color:#dd3333}blockquote{border-color:#dd3333}#searchform-dropdown{border-color:#dd3333}.dropdown-menu .sub-menu{border-color:#dd3333}.blog-entry.large-entry .blog-entry-readmore a:hover{border-color:#dd3333}.oceanwp-newsletter-form-wrap input[type="email"]:focus{border-color:#dd3333}.social-widget li.oceanwp-email a:hover{border-color:#dd3333}#respond #cancel-comment-reply-link:hover{border-color:#dd3333}body .contact-info-widget.big-icons li:hover i{border-color:#dd3333}#footer-widgets .oceanwp-newsletter-form-wrap input[type="email"]:focus{border-color:#dd3333}.woocommerce div.product div.images .open-image:hover,.woocommerce-error a:hover,.woocommerce-info a:hover,.woocommerce-message a:hover,.woocommerce ul.products li.product:not(.product-category) .image-wrap .button:hover,input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,button[type="submit"]:hover,input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,button[type="submit"]:focus,.button:hover,#site-navigation-wrap .dropdown-menu >li.btn >a:hover >span,.post-quote-author,.omw-modal .omw-close-modal:hover,body div.wpforms-container-full .wpforms-form input[type=submit]:hover,body div.wpforms-container-full .wpforms-form button[type=submit]:hover,body div.wpforms-container-full .wpforms-form .wpforms-page-button:hover{background-color:#dd3333}.page-header,.has-transparent-header .page-header{padding:20px 0 5px 0}@media (max-width:768px){.page-header,.has-transparent-header .page-header{padding:0}}@media (max-width:480px){.page-header,.has-transparent-header .page-header{padding:0}}.page-header .page-header-title,.page-header.background-image-page-header .page-header-title{color:#000000}.site-breadcrumbs,.background-image-page-header .site-breadcrumbs{color:#dd3333}#scroll-top{background-color:#dd3333}.page-numbers a:hover,.page-links a:hover span,.page-numbers.current,.page-numbers.current:hover{color:#dd3333}/* Header CSS */#site-logo #site-logo-inner,.oceanwp-social-menu .social-menu-inner,#site-header.full_screen-header .menu-bar-inner,.after-header-content .after-header-content-inner{height:55px}#site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a,.after-header-content-inner >a{line-height:55px}#site-header.has-header-media .overlay-header-media{background-color:rgba(0,0,0,0.5)}.navigation li.mega-cat .mega-cat-title{background-color:#000000}.navigation li.mega-cat .mega-cat-title{color:#ffffff}/* WooCommerce CSS */.wcmenucart i{font-size:25px}.wcmenucart i{top:5px}#owp-checkout-timeline .timeline-step{color:#cccccc}#owp-checkout-timeline .timeline-step{border-color:#cccccc}.woocommerce span.onsale{background-color:#3fc387}.oew-product-share ul li a .ops-icon-wrap{background-color:#dd3333}/* Typography CSS */body{font-family:Ubuntu;font-weight:400;font-size:20px;line-height:2;letter-spacing:.5px}#top-bar-content,#top-bar-social-alt{font-family:Ubuntu;font-weight:600}#site-navigation-wrap .dropdown-menu >li >a,#site-header.full_screen-header .fs-dropdown-menu >li >a,#site-header.top-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.center-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.medium-header #site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a{font-family:Ubuntu;font-weight:500;font-size:16px}
+</style></head>
+
+<body data-rsssl="1" class="product-template-default single single-product postid-591 wp-custom-logo wp-embed-responsive theme-oceanwp airplane-mode-disabled airplane-mode-no-qm woocommerce woocommerce-page woocommerce-no-js woo-variation-swatches wvs-theme-oceanwp wvs-theme-child-oceanwp wvs-style-squared wvs-attr-behavior-blur wvs-tooltip wvs-css oceanwp-theme sidebar-mobile separate-layout default-breakpoint content-full-width content-max-width has-breadcrumbs has-fixed-footer has-parallax-footer account-original-style elementor-default" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+	
+	
+	<div id="outer-wrap" class="site clr">
+
+		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+		
+		<div id="wrap" class="clr">
+
+			
+			
+<header id="site-header" class="minimal-header clr" data-height="55" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
+
+	
+					
+			<div id="site-header-inner" class="clr container">
+
+				
+				
+
+<div id="site-logo" class="clr" itemscope itemtype="https://schema.org/Brand">
+
+	
+	<div id="site-logo-inner" class="clr">
+
+		<a href="https://emmanuel-darko.github.io/orixTrade/" class="custom-logo-link" rel="home"><img width="96" height="38" src="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/cropped-onlinelogomaker-082120-0217-8060-2000-transparent-e1597976968975.png" class="custom-logo" alt="Orix" loading="lazy" srcset="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/cropped-onlinelogomaker-082120-0217-8060-2000-transparent-e1597976968975.png 96w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/cropped-onlinelogomaker-082120-0217-8060-2000-transparent-e1597976968975-64x25.png 64w" sizes="(max-width: 96px) 100vw, 96px"></a>
+	</div>
+
+	
+	
+</div>
+
+			<div id="site-navigation-wrap" class="clr">
+			
+			
+			
+			<nav id="site-navigation" class="navigation main-navigation clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+
+				<ul id="menu-main-menu" class="main-menu dropdown-menu sf-menu"><li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-189"><a href="https://emmanuel-darko.github.io/orixTrade/" class="menu-link"><span class="text-wrap">Home</span></a></li><li id="menu-item-188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current_page_parent dropdown menu-item-188"><a href="https://emmanuel-darko.github.io/orixTrade/shop/" class="menu-link"><span class="text-wrap">Shop <span class="nav-arrow fa fa-angle-down"></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-648" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor current-menu-parent current-product-parent menu-item-648"><a href="https://emmanuel-darko.github.io/orixTrade/product-category/mobile-phones/" class="menu-link"><span class="text-wrap">Mobile Phones</span></a></li>	<li id="menu-item-191" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-191"><a href="https://emmanuel-darko.github.io/orixTrade/product-category/laptops/" class="menu-link"><span class="text-wrap">Laptops</span></a></li>	<li id="menu-item-190" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-190"><a href="https://emmanuel-darko.github.io/orixTrade/product-category/accessories/" class="menu-link"><span class="text-wrap">Accessories</span></a></li>	<li id="menu-item-193" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-193"><a href="https://emmanuel-darko.github.io/orixTrade/product-category/uncategorized/" class="menu-link"><span class="text-wrap">Others</span></a></li></ul>
+</li><li id="menu-item-756" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-756"><a href="https://emmanuel-darko.github.io/orixTrade/my-account/" class="menu-link"><span class="text-wrap">My account</span></a></li>
+			<li class="woo-menu-icon wcmenucart-toggle-drop_down bag-style spacious toggle-cart-widget">
+				
+			<a href="https://emmanuel-darko.github.io/orixTrade/cart/" class="wcmenucart">
+								<span class="wcmenucart-cart-icon">
+					<span class="wcmenucart-count">0</span>
+				</span>
+			</a>
+
+											<div class="current-shop-items-dropdown owp-mini-cart clr">
+						<div class="current-shop-items-inner clr">
+							<div class="widget woocommerce widget_shopping_cart"><div class="widget_shopping_cart_content"></div></div>						</div>
+					</div>
+							</li>
+
+			</ul>
+			</nav>
+
+			
+			
+					</div>
+			
+		
+	
+				
+	<div class="oceanwp-mobile-menu-icon clr mobile-right">
+
+		
+		
+		
+			<a href="https://emmanuel-darko.github.io/orixTrade/cart/" class="wcmenucart">
+								<span class="wcmenucart-cart-icon">
+					<span class="wcmenucart-count">0</span>
+				</span>
+			</a>
+
+		
+		<a href="#" class="mobile-menu" aria-label="Mobile Menu">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+								<span class="oceanwp-text">Menu</span>
+
+						</a>
+
+		
+		
+		
+	</div>
+
+
+			</div>
+
+			
+			
+			
+		
+		
+</header>
+
+
+			
+			<div class="owp-floating-bar">
+				<div class="container clr">
+					<div class="left">
+				        <p class="selected">Selected:</p>
+				        <h2 class="entry-title" itemprop="name">Huawei P30 Pro Dual SIM 128GB 6GB RAM VOG-L29 Black</h2>
+				    </div>
+					<div class="right">
+				        <div class="product_price">
+				        	<p class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>558.00</bdi></span></p>
+		                </div>
+		                <form action="?add-to-cart=591" class="cart" method="post" enctype="multipart/form-data">	<div class="quantity">
+				<label class="screen-reader-text" for="quantity_5f4c6fd80bd3a">Huawei P30 Pro Dual SIM 128GB 6GB RAM VOG-L29 Black quantity</label>
+		<input type="number" id="quantity_5f4c6fd80bd3a" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" placeholder="" inputmode="numeric">
+			</div>
+	<button type="submit" name="add-to-cart" value="591" class="floating_add_to_cart_button button alt">Add to cart</button></form>				    </div>
+		        </div>
+		    </div>
+
+		
+			<main id="main" class="site-main clr" role="main">
+
+				
+
+<header class="page-header">
+
+	
+	<div class="container clr page-header-inner">
+
+		
+			<span class="page-header-title clr" itemprop="headline">Huawei P30 Pro Dual SIM 128GB 6GB RAM VOG-L29 Black</span>
+
+			
+		
+		<nav aria-label="Breadcrumbs" class="site-breadcrumbs clr position-under-title" itemprop="breadcrumb"><ol class="trail-items" itemscope itemtype="http://schema.org/BreadcrumbList"><meta name="numberOfItems" content="3"><meta name="itemListOrder" content="Ascending"><li class="trail-item trail-begin" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="https://emmanuel-darko.github.io/orixTrade" rel="home" aria-label="Home" itemtype="https://schema.org/Thing" itemprop="item"><span itemprop="name"><span class="icon-home"></span><span class="breadcrumb-home has-icon">Home</span></span></a><span class="breadcrumb-sep"> / </span><meta content="1" itemprop="position"></li><li class="trail-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="https://emmanuel-darko.github.io/orixTrade/shop/" itemtype="https://schema.org/Thing" itemprop="item"><span itemprop="name">Shop</span></a><span class="breadcrumb-sep"> / </span><meta content="2" itemprop="position"></li><li class="trail-item trail-end" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="https://emmanuel-darko.github.io/orixTrade/product/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black/" itemtype="https://schema.org/Thing" itemprop="item"><span itemprop="name">Huawei P30 Pro Dual SIM 128GB 6GB RAM VOG-L29 Black</span></a><meta content="3" itemprop="position"></li></ol></nav>
+	</div>
+
+	
+	
+</header>
+
+
+	
+
+<div id="content-wrap" class="container clr">
+
+	
+	<div id="primary" class="content-area clr">
+
+		
+		<div id="content" class="clr site-content">
+
+			
+			<article class="entry-content entry clr">
+
+					
+			<div class="woocommerce-notices-wrapper"></div>
+<div id="product-591" class="entry has-media owp-thumbs-layout-horizontal owp-btn-normal owp-tabs-layout-horizontal has-no-thumbnails circle-sale product type-product post-591 status-publish first instock product_cat-mobile-phones has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+
+	
+			<div class="owp-product-nav-wrap clr">
+				<ul class="owp-product-nav">
+			        						<li class="next-li">
+							<a href="https://emmanuel-darko.github.io/orixTrade/product/apple-iphone-8-plus-128gb-3gb-ram-gold/" class="owp-nav-link next" rel="next"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+							<a href="https://emmanuel-darko.github.io/orixTrade/product/apple-iphone-8-plus-128gb-3gb-ram-gold/" class="owp-nav-text next-text">Previous Product</a>
+							<div class="owp-nav-thumb">
+								<a title="Apple iPhone 8 Plus 128GB 3GB RAM Gold" href="https://emmanuel-darko.github.io/orixTrade/product/apple-iphone-8-plus-128gb-3gb-ram-gold/"><img width="100" height="100" src="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/apple-iphone-8-plus-128gb-3gb-ram-gold-100x100.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="" loading="lazy" srcset="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/apple-iphone-8-plus-128gb-3gb-ram-gold-100x100.jpg 100w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/apple-iphone-8-plus-128gb-3gb-ram-gold-150x150.jpg 150w" sizes="(max-width: 100px) 100vw, 100px"></a>
+							</div>
+						</li>
+											<li class="prev-li">
+							<a href="https://emmanuel-darko.github.io/orixTrade/product/samsung-galaxy-s20-dual-sim-128gb-8gb-ram-sm-g980f-ds-cloud-blue/" class="owp-nav-text prev-text">Next Product</a>
+							<a href="https://emmanuel-darko.github.io/orixTrade/product/samsung-galaxy-s20-dual-sim-128gb-8gb-ram-sm-g980f-ds-cloud-blue/" class="owp-nav-link prev" rel="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+							<div class="owp-nav-thumb">
+								<a title="Samsung Galaxy S20 Dual SIM 128GB 8GB RAM SM-G980F/DS Cloud Blue" href="https://emmanuel-darko.github.io/orixTrade/product/samsung-galaxy-s20-dual-sim-128gb-8gb-ram-sm-g980f-ds-cloud-blue/"><img width="100" height="100" src="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/samsung-galaxy-s20-dual-sim-128gb-8gb-ram-sm-g980f-ds-cloud-blue-100x100.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="" loading="lazy" srcset="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/samsung-galaxy-s20-dual-sim-128gb-8gb-ram-sm-g980f-ds-cloud-blue-100x100.jpg 100w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/samsung-galaxy-s20-dual-sim-128gb-8gb-ram-sm-g980f-ds-cloud-blue-150x150.jpg 150w" sizes="(max-width: 100px) 100vw, 100px"></a>
+							</div>
+						</li>
+							        </ul>
+		    </div>
+
+		<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
+	<figure class="woocommerce-product-gallery__wrapper">
+		<div data-thumb="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black-100x100.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image"><a href="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black.jpg"><img width="158" height="336" src="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black.jpg" class="wp-post-image" alt="" loading="lazy" title="huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black.jpg" data-caption="" data-src="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black.jpg" data-large_image="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black.jpg" data-large_image_width="158" data-large_image_height="336" srcset="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black.jpg 158w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black-64x136.jpg 64w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black-141x300.jpg 141w" sizes="(max-width: 158px) 100vw, 158px"></a></div>	</figure>
+</div>
+
+		<div class="summary entry-summary">
+			
+<span class="single-post-title product_title entry-title" itemprop="name">Huawei P30 Pro Dual SIM 128GB 6GB RAM VOG-L29 Black</span>
+<p class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>558.00</bdi></span></p>
+<div class="woocommerce-product-details__short-description">
+	<dl>
+<dt>Announced:</dt>
+<dd>2019, March
+ </dd>
+<dt>Status:</dt>
+<dd>Available. Released 2019, March
+ </dd>
+</dl>
+</div>
+
+	
+	<form class="cart" action="https://emmanuel-darko.github.io/orixTrade/product/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black/" method="post" enctype="multipart/form-data">
+		
+			<div class="quantity">
+				<label class="screen-reader-text" for="quantity_5f4c6fd82142b">Huawei P30 Pro Dual SIM 128GB 6GB RAM VOG-L29 Black quantity</label>
+		<input type="number" id="quantity_5f4c6fd82142b" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" placeholder="" inputmode="numeric">
+			</div>
+	
+		<button type="submit" name="add-to-cart" value="591" class="single_add_to_cart_button button alt">Add to cart</button>
+
+			</form>
+
+			<div class="wcppec-checkout-buttons woo_pp_cart_buttons_div">
+						<div id="woo_pp_ec_button_product"></div>
+					</div>
+		
+<div class="product_meta">
+
+	
+	
+	<span class="posted_in">Category: <a href="https://emmanuel-darko.github.io/orixTrade/product-category/mobile-phones/" rel="tag">Mobile Phones</a></span>
+	
+	
+</div>
+		</div>
+
+		<div class="clear-after-summary clr"></div>
+	<div class="woocommerce-tabs wc-tabs-wrapper">
+		<ul class="tabs wc-tabs" role="tablist">
+							<li class="description_tab" id="tab-title-description" role="tab" aria-controls="tab-description">
+					<a href="#tab-description">
+						Description					</a>
+				</li>
+							<li class="reviews_tab" id="tab-title-reviews" role="tab" aria-controls="tab-reviews">
+					<a href="#tab-reviews">
+						Reviews (0)					</a>
+				</li>
+					</ul>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
+				
+	<h2>Description</h2>
+
+<nav class="tabs">
+<ul>
+<li class="active"><a href="#" data-target="specsTab">Specifications</a></li>
+<li><a href="#" data-target="contentTab">Package Content</a></li>
+<li><a href="#" data-target="videoTab">Video & Review</a></li>
+</ul>
+</nav>
+<div class="tabs-wrapper">
+<div class="tab-content current-tab" id="specsTab">
+<header class="tab-header">
+<h4>Specifications</h4>
+</header>
+<article class="tab-main">
+<dl class="specs">
+<dt>Network:</dt>
+<dd>
+<dl>
+<dt>Technology:</dt>
+<dd>GSM / HSPA / LTE
+ </dd>
+<dt>2G bands:</dt>
+<dd>GSM 850 / 900 / 1800 / 1900 SIM 1 & SIM 2
+ </dd>
+<dt>3G bands:</dt>
+<dd>HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100
+ </dd>
+<dt>4G bands:</dt>
+<dd>LTE band 1(2100), 2(1900), 3(1800), 4(1700/2100), 5(850), 6(900), 7(2600), 8(900), 9(1800), 12(700), 17(700), 18(800), 19(800), 20(800), 26(850), 28(700), 32(1500), 34(2000), 38(2600), 39(1900), 40(2300)
+ </dd>
+<dt>Speed:</dt>
+<dd>HSPA 42.2/5.76 Mbps, LTE-A Cat21 1400/200 Mbps
+ </dd>
+<dt>GPRS:</dt>
+<dd>Yes
+ </dd>
+<dt>EDGE:</dt>
+<dd>Yes
+ </dd>
+</dl>
+</dd>
+</dl>
+<dl class="specs">
+<dt>Launch:</dt>
+<dd>
+<dl>
+<dt>Announced:</dt>
+<dd>2019, March
+ </dd>
+<dt>Status:</dt>
+<dd>Available. Released 2019, March
+ </dd>
+</dl>
+</dd>
+</dl>
+<dl class="specs">
+<dt>Body:</dt>
+<dd>
+<dl>
+<dt>Dimensions:</dt>
+<dd>158 x 73.4 x 8.4 mm
+ </dd>
+<dt>Weight:</dt>
+<dd>192 g
+ </dd>
+<dt>SIM:</dt>
+<dd>Hybrid Dual SIM (Nano-SIM, dual stand-by)
+ </dd>
+<dt> </dt>
+<dd>IP68 dust/water resistant (up to 2m for 30 mins), –
+ </dd>
+</dl>
+</dd>
+</dl>
+<dl class="specs">
+<dt>Display:</dt>
+<dd>
+<dl>
+<dt>Type:</dt>
+<dd>OLED capacitive touchscreen, 16M colors
+ </dd>
+<dt>Size:</dt>
+<dd>6.47 inches, 102.8 cm2 (~88.6% screen-to-body ratio)
+ </dd>
+<dt>Resolution:</dt>
+<dd>1080 x 2340 pixels, 19.5:9 ratio (~398 ppi density)
+ </dd>
+<dt> </dt>
+<dd>HDR10, DCI-P3
+ </dd>
+</dl>
+</dd>
+</dl>
+<dl class="specs">
+<dt>Platform:</dt>
+<dd>
+<dl>
+<dt>OS:</dt>
+<dd>Android 9.0 (Pie); EMUI 9.1
+ </dd>
+<dt>Chipset:</dt>
+<dd>HiSilicon Kirin 980
+ </dd>
+<dt>CPU:</dt>
+<dd>Octa-core (2×2.6 GHz Cortex-A76 & 2×1.92 GHz Cortex-A76 & 4×1.8 GHz Cortex-A55)
+ </dd>
+<dt>GPU:</dt>
+<dd>Mali-G76 MP10
+ </dd>
+</dl>
+</dd>
+</dl>
+<dl class="specs">
+<dt>Memory:</dt>
+<dd>
+<dl>
+<dt>Card slot:</dt>
+<dd>NM (Nano Memory), up to 256GB (uses SIM 2)
+ </dd>
+<dt>Internal:</dt>
+<dd>128 GB, 6 GB RAM
+ </dd>
+</dl>
+</dd>
+</dl>
+<dl class="specs">
+<dt>Sound:</dt>
+<dd>
+<dl>
+<dt>Loudspeaker:</dt>
+<dd>Yes
+ </dd>
+<dt>3.5mm jack:</dt>
+<dd>No
+ </dd>
+<dt> </dt>
+<dd>32-bit/384kHz audio, Active noise cancellation with dedicated mic, Dolby Atmos sound
+ </dd>
+</dl>
+</dd>
+</dl>
+<dl class="specs">
+<dt>Comms:</dt>
+<dd>
+<dl>
+<dt>WLAN:</dt>
+<dd>Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot
+ </dd>
+<dt>Bluetooth:</dt>
+<dd>5.0, A2DP, aptX HD, LE
+ </dd>
+<dt>GPS:</dt>
+<dd>Yes, with dual-band A-GPS, GLONASS, BDS, GALILEO, QZSS
+ </dd>
+<dt>NFC:</dt>
+<dd>Yes
+ </dd>
+<dt>Infrared port:</dt>
+<dd>Yes
+ </dd>
+<dt>Radio:</dt>
+<dd>No
+ </dd>
+<dt>USB:</dt>
+<dd>3.1, Type-C 1.0 reversible connector
+ </dd>
+</dl>
+</dd>
+</dl>
+<dl class="specs">
+<dt>Features:</dt>
+<dd>
+<dl>
+<dt>Sensors:</dt>
+<dd>Fingerprint (under display), accelerometer, gyro, proximity, compass, color spectrum
+ </dd>
+</dl>
+</dd>
+</dl>
+<dl class="specs">
+<dt>Battery:</dt>
+<dd>
+<dl>
+<dt> </dt>
+<dd>Non-removable Li-Po 4200 mAh battery
+ </dd>
+<dt>Charging:</dt>
+<dd>Fast battery charging 40W (70% in 30 min), Fast wireless charging 15W, Power bank/Reverse wireless charging
+ </dd>
+</dl>
+</dd>
+</dl>
+<dl class="specs">
+<dt>Main Camera:</dt>
+<dd>
+<dl>
+<dt>Quad:</dt>
+<dd>40 MP, f/1.6, 27mm (wide), PDAF, OIS, 20 MP, f/2.2, 16mm (ultrawide), PDAF, Periscope 8 MP, f/3.4, 125mm (telephoto), 5x optical zoom, OIS, PDAF, TOF 3D camera
+ </dd>
+<dt>Features:</dt>
+<dd>Leica optics, dual-LED dual-tone flash, panorama, HDR
+ </dd>
+<dt>Video:</dt>
+<dd>2160p@30fps, 1080p@60fps, 1080p@30fps (gyro-EIS), 720p@960fps
+ </dd>
+</dl>
+</dd>
+</dl>
+<dl class="specs">
+<dt>Selfie camera:</dt>
+<dd>
+<dl>
+<dt>Single:</dt>
+<dd>32 MP, f/2.0, (wide)
+ </dd>
+<dt>Features:</dt>
+<dd>HDR
+ </dd>
+<dt>Video:</dt>
+<dd>1080p@30fps
+ </dd>
+</dl>
+</dd>
+</dl>
+</article></div>
+<div class="tab-content" id="contentTab">
+<header class="tab-header">
+<h4>Package Content</h4>
+</header>
+<article class="tab-main">
+<ul class="list">
+<li>Phone</li>
+<li>Battery</li>
+<li>Charger</li>
+<li>USB cable</li>
+</ul>
+</article></div>
+<div class="tab-content" id="videoTab">
+<header class="tab-header">
+<h4>Video & Review</h4>
+</header>
+<article class="tab-main">
+<div class="video-wrap">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/0O4_EAGNg7k?rel=0" frameborder="0" allowfullscreen=""></iframe>
+ </div>
+<section>
+<h5>Model review:</h5>
+<p>No review yet. Check back later.</p>
+</section>
+</article></div>
+</div>
+			</div>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">
+				<div id="reviews" class="woocommerce-Reviews">
+	<div id="comments">
+		<h2 class="woocommerce-Reviews-title">
+			Reviews		</h2>
+
+					<p class="woocommerce-noreviews">There are no reviews yet.</p>
+			</div>
+
+			<div id="review_form_wrapper">
+			<div id="review_form">
+					<div id="respond" class="comment-respond">
+		<span id="reply-title" class="comment-reply-title">Be the first to review “Huawei P30 Pro Dual SIM 128GB 6GB RAM VOG-L29 Black” <small><a rel="nofollow" id="cancel-comment-reply-link" href="/product/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black/?v=1b5c8f7f0278#respond" style="display:none;">Cancel reply</a></small></span><form action="https://emmanuel-darko.github.io/orixTrade/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><div class="comment-form-rating"><label for="rating">Your rating <span class="required">*</span></label><select name="rating" id="rating" required>
+						<option value="">Rate…</option>
+						<option value="5">Perfect</option>
+						<option value="4">Good</option>
+						<option value="3">Average</option>
+						<option value="2">Not that bad</option>
+						<option value="1">Very poor</option>
+					</select></div><p class="comment-form-comment"><label for="comment">Your review <span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" required></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label><input id="author" name="author" type="text" value="" size="30" required></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label><input id="email" name="email" type="email" value="" size="30" required></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Submit"> <input type="hidden" name="comment_post_ID" value="591" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p></form>	</div>
+				</div>
+		</div>
+	
+	<div class="clear"></div>
+</div>
+			</div>
+		
+			</div>
+
+
+<div class="oew-product-share clr">
+
+	<ul class="ocean-social-share clr" aria-label="Share this product on social media">
+
+		
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?status=Huawei%20P30%20Pro%20Dual%20SIM%20128GB%206GB%20RAM%20VOG-L29%20Black+https://emmanuel-darko.github.io/orixTrade/product/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black/" target="_blank" aria-label="Share on Twitter" onclick="ops_onClick( this.href );return false;">
+						<span class="screen-reader-text">Opens in a new window</span>
+						<span class="ops-icon-wrap">
+							<svg class="ops-icon" aria-labelledby="ops-twitter-icon" role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+								<path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path>
+							</svg>
+						</span>
+						<div class="product-share-text" aria-hidden="true">Tweet This Product</div>
+					</a>
+				</li>
+
+			
+		
+				<li class="facebook">
+					<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.d-commerce.dev.cc%2Fproduct%2Fhuawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black%2F" target="_blank" aria-label="Share on Facebook" onclick="ops_onClick( this.href );return false;">
+						<span class="screen-reader-text">Opens in a new window</span>
+						<span class="ops-icon-wrap">
+							<svg class="ops-icon" aria-labelledby="ops-facebook-icon" role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+								<path d="M5.677,12.998V8.123h3.575V6.224C9.252,2.949,11.712,0,14.736,0h3.94v4.874h-3.94
+								c-0.432,0-0.934,0.524-0.934,1.308v1.942h4.874v4.874h-4.874V24H9.252V12.998H5.677z"></path>
+							</svg>
+						</span>
+						<div class="product-share-text" aria-hidden="true">Share on Facebook</div>
+					</a>
+				</li>
+
+			
+		
+				<li class="pinterest">
+					<a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.d-commerce.dev.cc%2Fproduct%2Fhuawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black%2F&media=https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black.jpg&description=Huawei%20P30%20Pro%20Dual%20SIM%20128GB%206GB%20RAM%20VOG-L29%20Black" target="_blank" aria-label="Share on Pinterest" onclick="ops_onClick( this.href );return false;">
+						<span class="screen-reader-text">Opens in a new window</span>
+						<span class="ops-icon-wrap">
+							<svg class="ops-icon" aria-labelledby="ops-pinterest-icon" role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+								<path d="M13.757,17.343c-1.487,0-2.886-0.804-3.365-1.717c0,0-0.8,3.173-0.969,3.785
+								c-0.596,2.165-2.35,4.331-2.487,4.508c-0.095,0.124-0.305,0.085-0.327-0.078c-0.038-0.276-0.485-3.007,0.041-5.235
+								c0.264-1.118,1.772-7.505,1.772-7.505s-0.44-0.879-0.44-2.179c0-2.041,1.183-3.565,2.657-3.565c1.252,0,1.857,0.94,1.857,2.068
+								c0,1.26-0.802,3.142-1.216,4.888c-0.345,1.461,0.734,2.653,2.174,2.653c2.609,0,4.367-3.352,4.367-7.323
+								c0-3.018-2.032-5.278-5.731-5.278c-4.177,0-6.782,3.116-6.782,6.597c0,1.2,0.355,2.047,0.909,2.701
+								c0.255,0.301,0.29,0.422,0.198,0.767c-0.067,0.254-0.218,0.864-0.281,1.106c-0.092,0.349-0.375,0.474-0.69,0.345
+								c-1.923-0.785-2.82-2.893-2.82-5.262c0-3.912,3.3-8.604,9.844-8.604c5.259,0,8.72,3.805,8.72,7.89
+								C21.188,13.307,18.185,17.343,13.757,17.343z"></path>
+							</svg>
+						</span>
+						<div class="product-share-text" aria-hidden="true">Pin This Product</div>
+					</a>
+				</li>
+
+			
+		
+				<li class="email">
+					<a href="mailto:?subject=Huawei%20P30%20Pro%20Dual%20SIM%20128GB%206GB%20RAM%20VOG-L29%20Black&body=https://emmanuel-darko.github.io/orixTrade/product/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black/" target="_blank" aria-label="Share via email" onclick="ops_onClick( this.href );return false;">
+						<span class="screen-reader-text">Opens in a new window</span>
+						<span class="ops-icon-wrap">
+							<svg class="ops-icon" aria-labelledby="ops-email-icon" role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+								<path d="M23.674,3.741c-0.338-0.495-0.907-0.823-1.549-0.823H1.876c-0.629,0-1.184,0.316-1.525,0.794l11.687,9.745
+								L23.674,3.741z"></path>
+								<path d="M12.037,16.409L0,6.371v12.836c0,1.031,0.844,1.875,1.875,1.875h20.249c1.031,0,1.875-0.844,1.875-1.875
+								V6.421L12.037,16.409z"></path>
+							</svg>
+						</span>
+						<div class="product-share-text" aria-hidden="true">Mail This Product</div>
+					</a>
+				</li>
+
+			
+		
+	</ul>
+
+</div>
+	<section class="related products">
+
+					<h2>Related products</h2>
+				
+		
+<ul class="products oceanwp-row clr grid infinite-scroll-wrap">
+
+			
+					<li class="entry has-media has-product-nav col span_1_of_3 owp-content-center item-entry owp-thumbs-layout-horizontal owp-btn-normal owp-tabs-layout-horizontal has-no-thumbnails circle-sale product type-product post-429 status-publish first instock product_cat-mobile-phones has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<div class="product-inner clr"><ul class="woo-entry-inner clr"><li class="image-wrap">
+	<div class="woo-entry-image clr">
+				<a href="https://emmanuel-darko.github.io/orixTrade/product/apple-iphone-xr-dual-esim-64gb-red/" class="woocommerce-LoopProduct-link">
+			<img width="171" height="336" src="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/apple-iphone-xr-dual-esim-64gb-red.jpg" class="woo-entry-image-main" alt="Apple iPhone XR Dual eSIM 64GB Red" loading="lazy" itemprop="image" srcset="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/apple-iphone-xr-dual-esim-64gb-red.jpg 171w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/apple-iphone-xr-dual-esim-64gb-red-64x126.jpg 64w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/apple-iphone-xr-dual-esim-64gb-red-153x300.jpg 153w" sizes="(max-width: 171px) 100vw, 171px">		</a>
+			</div>
+
+	<a href="?add-to-cart=429" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="429" data-product_sku="" aria-label="Add “Apple iPhone XR Dual eSIM 64GB Red” to your cart" rel="nofollow">Add to cart</a><ul class="woo-entry-buttons"><li class="woo-quickview-btn"><a href="#" class="owp-quick-view" id="product_id_429" data-product_id="429"><i class="icon-eye"></i></a></li></ul></li><ul class="woo-product-info"><li class="category"><a href="https://emmanuel-darko.github.io/orixTrade/product-category/mobile-phones/" rel="tag">Mobile Phones</a></li><li class="title"><a href="https://emmanuel-darko.github.io/orixTrade/product/apple-iphone-xr-dual-esim-64gb-red/">Apple iPhone XR Dual eSIM 64GB Red</a></li><li class="price-wrap">
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>621.00</bdi></span></span>
+</li></ul>
+<ul class="woo-product-gallery">
+
+	
+	
+		<li class="active">
+			<a href="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/apple-iphone-xr-dual-esim-64gb-red.jpg" class="woo-product-gallery-link no-lightbox">
+				<img width="150" height="150" src="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/apple-iphone-xr-dual-esim-64gb-red-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Apple iPhone XR Dual eSIM 64GB Red" loading="lazy" itemprop="image" srcset="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/apple-iphone-xr-dual-esim-64gb-red-150x150.jpg 150w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/apple-iphone-xr-dual-esim-64gb-red-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px">			</a>
+		</li>
+
+		
+	
+</ul>
+</ul></div></li>
+
+			
+					<li class="entry has-media has-product-nav col span_1_of_3 owp-content-center item-entry owp-thumbs-layout-horizontal owp-btn-normal owp-tabs-layout-horizontal has-no-thumbnails circle-sale product type-product post-425 status-publish instock product_cat-mobile-phones has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<div class="product-inner clr"><ul class="woo-entry-inner clr"><li class="image-wrap">
+	<div class="woo-entry-image clr">
+				<a href="https://emmanuel-darko.github.io/orixTrade/product/lg-velvet-5g-dual-sim-128gb-6gb-ram-illusion-sunset-orange/" class="woocommerce-LoopProduct-link">
+			<img width="153" height="336" src="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/lg-velvet-5g-dual-sim-128gb-6gb-ram-illusion-sunset-orange.jpg" class="woo-entry-image-main" alt="LG Velvet 5G Dual SIM 128GB 6GB RAM Illusion Sunset Orange" loading="lazy" itemprop="image" srcset="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/lg-velvet-5g-dual-sim-128gb-6gb-ram-illusion-sunset-orange.jpg 153w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/lg-velvet-5g-dual-sim-128gb-6gb-ram-illusion-sunset-orange-64x141.jpg 64w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/lg-velvet-5g-dual-sim-128gb-6gb-ram-illusion-sunset-orange-137x300.jpg 137w" sizes="(max-width: 153px) 100vw, 153px">		</a>
+			</div>
+
+	<a href="?add-to-cart=425" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="425" data-product_sku="" aria-label="Add “LG Velvet 5G Dual SIM 128GB 6GB RAM Illusion Sunset Orange” to your cart" rel="nofollow">Add to cart</a><ul class="woo-entry-buttons"><li class="woo-quickview-btn"><a href="#" class="owp-quick-view" id="product_id_425" data-product_id="425"><i class="icon-eye"></i></a></li></ul></li><ul class="woo-product-info"><li class="category"><a href="https://emmanuel-darko.github.io/orixTrade/product-category/mobile-phones/" rel="tag">Mobile Phones</a></li><li class="title"><a href="https://emmanuel-darko.github.io/orixTrade/product/lg-velvet-5g-dual-sim-128gb-6gb-ram-illusion-sunset-orange/">LG Velvet 5G Dual SIM 128GB 6GB RAM Illusion Sunset Orange</a></li><li class="price-wrap">
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>522.00</bdi></span></span>
+</li></ul>
+<ul class="woo-product-gallery">
+
+	
+	
+		<li class="active">
+			<a href="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/lg-velvet-5g-dual-sim-128gb-6gb-ram-illusion-sunset-orange.jpg" class="woo-product-gallery-link no-lightbox">
+				<img width="150" height="150" src="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/lg-velvet-5g-dual-sim-128gb-6gb-ram-illusion-sunset-orange-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="LG Velvet 5G Dual SIM 128GB 6GB RAM Illusion Sunset Orange" loading="lazy" itemprop="image" srcset="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/lg-velvet-5g-dual-sim-128gb-6gb-ram-illusion-sunset-orange-150x150.jpg 150w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/lg-velvet-5g-dual-sim-128gb-6gb-ram-illusion-sunset-orange-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px">			</a>
+		</li>
+
+		
+	
+</ul>
+</ul></div></li>
+
+			
+					<li class="entry has-media has-product-nav col span_1_of_3 owp-content-center item-entry owp-thumbs-layout-horizontal owp-btn-normal owp-tabs-layout-horizontal has-no-thumbnails circle-sale product type-product post-449 status-publish last instock product_cat-mobile-phones has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<div class="product-inner clr"><ul class="woo-entry-inner clr"><li class="image-wrap">
+	<div class="woo-entry-image clr">
+				<a href="https://emmanuel-darko.github.io/orixTrade/product/samsung-galaxy-s20-5g-dual-sim-128gb-12gb-ram-sm-g981b-ds-cloud-pink/" class="woocommerce-LoopProduct-link">
+			<img width="154" height="336" src="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/samsung-galaxy-s20-5g-dual-sim-128gb-12gb-ram-sm-g981b-ds-cloud-pink.jpg" class="woo-entry-image-main" alt="Samsung Galaxy S20 5G Dual SIM 128GB 12GB RAM SM-G981B/DS Cloud Pink" loading="lazy" itemprop="image" srcset="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/samsung-galaxy-s20-5g-dual-sim-128gb-12gb-ram-sm-g981b-ds-cloud-pink.jpg 154w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/samsung-galaxy-s20-5g-dual-sim-128gb-12gb-ram-sm-g981b-ds-cloud-pink-64x140.jpg 64w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/samsung-galaxy-s20-5g-dual-sim-128gb-12gb-ram-sm-g981b-ds-cloud-pink-138x300.jpg 138w" sizes="(max-width: 154px) 100vw, 154px">		</a>
+			</div>
+
+	<a href="?add-to-cart=449" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="449" data-product_sku="" aria-label="Add “Samsung Galaxy S20 5G Dual SIM 128GB 12GB RAM SM-G981B/DS Cloud Pink” to your cart" rel="nofollow">Add to cart</a><ul class="woo-entry-buttons"><li class="woo-quickview-btn"><a href="#" class="owp-quick-view" id="product_id_449" data-product_id="449"><i class="icon-eye"></i></a></li></ul></li><ul class="woo-product-info"><li class="category"><a href="https://emmanuel-darko.github.io/orixTrade/product-category/mobile-phones/" rel="tag">Mobile Phones</a></li><li class="title"><a href="https://emmanuel-darko.github.io/orixTrade/product/samsung-galaxy-s20-5g-dual-sim-128gb-12gb-ram-sm-g981b-ds-cloud-pink/">Samsung Galaxy S20 5G Dual SIM 128GB 12GB RAM SM-G981B/DS Cloud Pink</a></li><li class="price-wrap">
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>800.00</bdi></span></span>
+</li></ul>
+<ul class="woo-product-gallery">
+
+	
+	
+		<li class="active">
+			<a href="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/samsung-galaxy-s20-5g-dual-sim-128gb-12gb-ram-sm-g981b-ds-cloud-pink.jpg" class="woo-product-gallery-link no-lightbox">
+				<img width="150" height="150" src="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/samsung-galaxy-s20-5g-dual-sim-128gb-12gb-ram-sm-g981b-ds-cloud-pink-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Samsung Galaxy S20 5G Dual SIM 128GB 12GB RAM SM-G981B/DS Cloud Pink" loading="lazy" itemprop="image" srcset="https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/samsung-galaxy-s20-5g-dual-sim-128gb-12gb-ram-sm-g981b-ds-cloud-pink-150x150.jpg 150w,https://emmanuel-darko.github.io/orixTrade/wp-content/uploads/2020/08/samsung-galaxy-s20-5g-dual-sim-128gb-12gb-ram-sm-g981b-ds-cloud-pink-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px">			</a>
+		</li>
+
+		
+	
+</ul>
+</ul></div></li>
+
+			
+		</ul>
+
+	</section>
+	</div>
+
+
+		
+	
+			</article>
+
+			
+		</div>
+
+		
+	</div>
+
+	
+</div>
+
+
+	
+
+	</main>
+
+	
+	
+	
+		
+<footer id="footer" class="site-footer parallax-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
+
+	
+	<div id="footer-inner" class="clr">
+
+		
+
+<div id="footer-widgets" class="oceanwp-row clr">
+
+	
+	<div class="footer-widgets-inner container">
+
+					<div class="footer-box span_1_of_4 col col-1">
+							</div>
+
+							<div class="footer-box span_1_of_4 col col-2">
+									</div>
+				
+							<div class="footer-box span_1_of_4 col col-3 ">
+									</div>
+				
+							<div class="footer-box span_1_of_4 col col-4">
+									</div>
+				
+			
+	</div>
+
+	
+</div>
+
+
+
+<div id="footer-bottom" class="clr no-footer-nav">
+
+	
+	<div id="footer-bottom-inner" class="container clr">
+
+		
+		
+			<div id="copyright" class="clr" role="contentinfo">
+				© Copyright Orix Trade			</div>
+
+			
+	</div>
+
+	
+</div>
+
+
+	</div>
+
+	
+</footer>
+
+	
+	
+</div>
+
+
+</div>
+
+
+
+<a id="scroll-top" class="scroll-top-right" href="#"><span class="fa fa-angle-up" aria-label="Scroll to the top of the page"></span></a>
+
+
+
+<div id="sidr-close">
+	<a href="#" class="toggle-sidr-close" aria-label="Close mobile Menu">
+		<i class="icon icon-close" aria-hidden="true"></i><span class="close-text">Close Menu</span>
+	</a>
+</div>
+
+	
+	<div id="mobile-nav" class="navigation clr">
+
+		<ul id="menu-main-menu-1" class="mobile-menu dropdown-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-189"><a href="https://emmanuel-darko.github.io/orixTrade/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current_page_parent menu-item-188"><a href="https://emmanuel-darko.github.io/orixTrade/shop/">Shop</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor current-menu-parent current-product-parent menu-item-648"><a href="https://emmanuel-darko.github.io/orixTrade/product-category/mobile-phones/">Mobile Phones</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-191"><a href="https://emmanuel-darko.github.io/orixTrade/product-category/laptops/">Laptops</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-190"><a href="https://emmanuel-darko.github.io/orixTrade/product-category/accessories/">Accessories</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-193"><a href="https://emmanuel-darko.github.io/orixTrade/product-category/uncategorized/">Others</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-756"><a href="https://emmanuel-darko.github.io/orixTrade/my-account/">My account</a></li>
+</ul>
+	</div>
+
+
+	
+<div id="mobile-menu-search" class="clr">
+	<form method="get" action="https://emmanuel-darko.github.io/orixTrade/" class="mobile-searchform" role="search" aria-label="Search for:">
+		<label for="ocean-mobile-search1">
+			<input type="search" name="s" autocomplete="off" placeholder="Search">
+			<button type="submit" class="searchform-submit" aria-label="Submit Search">
+				<i class="icon icon-magnifier" aria-hidden="true"></i>
+			</button>
+							<input type="hidden" name="post_type" value="product">
+					</label>
+			</form>
+</div>
+
+
+
+<div id="owp-qv-wrap">
+	<div class="owp-qv-container">
+		<div class="owp-qv-content-wrap">
+			<div class="owp-qv-content-inner">
+				<a href="#" class="owp-qv-close" aria-label="Close quick preview">×</a>
+				<div id="owp-qv-content" class="woocommerce single-product"></div>
+			</div>
+		</div>
+	</div>
+	<div class="owp-qv-overlay"></div>
+</div>
+<div id="oceanwp-cart-sidebar-wrap"><div class="oceanwp-cart-sidebar spacious"><a href="#" class="oceanwp-cart-close">×</a><p class="owp-cart-title">Cart</p><div class="divider"></div><div class="owp-mini-cart"><div class="widget woocommerce widget_shopping_cart"><div class="widget_shopping_cart_content"></div></div></div></div><div class="oceanwp-cart-sidebar-overlay"></div></div><script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"Product","@id":"https:\/\/emmanuel-darko.github.io\/orixTrade\/product\/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black\/#product","name":"Huawei P30 Pro Dual SIM 128GB 6GB RAM VOG-L29 Black","url":"https:\/\/emmanuel-darko.github.io\/orixTrade\/product\/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black\/","description":"Announced:\n 2019, March\n \n Status:\n Available. Released 2019, March","image":"https:\/\/emmanuel-darko.github.io\/orixTrade\/wp-content\/uploads\/2020\/08\/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black.jpg","sku":591,"offers":[{"@type":"Offer","price":"558.00","priceValidUntil":"2021-12-31","priceSpecification":{"price":"558.00","priceCurrency":"USD","valueAddedTaxIncluded":"false"},"priceCurrency":"USD","availability":"http:\/\/schema.org\/InStock","url":"https:\/\/emmanuel-darko.github.io\/orixTrade\/product\/huawei-p30-pro-dual-sim-128gb-6gb-ram-vog-l29-black\/","seller":{"@type":"Organization","name":"Orix","url":"https:\/\/PLACEHOLDER.wpsho"}}]}</script>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--close" aria-label="Close (Esc)"></button>
+				<button class="pswp__button pswp__button--share" aria-label="Share"></button>
+				<button class="pswp__button pswp__button--fs" aria-label="Toggle fullscreen"></button>
+				<button class="pswp__button pswp__button--zoom" aria-label="Zoom in/out"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" aria-label="Previous (arrow left)"></button>
+			<button class="pswp__button pswp__button--arrow--right" aria-label="Next (arrow right)"></button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+	<script type="text/javascript" id="mail-chimp-script-js-extra">
+/* <![CDATA[ */
+var ekit_site_url = {"siteurl":"https:\/\/PLACEHOLDER.wpsho"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/elementskit-lite/widgets/mail-chimp/assets/js/mail-chimp.js" id="mail-chimp-script-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/emmanuel-darko.github.io\/orixTrade\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/contact-form-7/includes/js/scripts.js" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/ipay-ghana-woocommerce/assets/js/ipay-ghana-wc.js" id="ipay-ghana-wc-script-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js" id="jquery-blockui-js"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/emmanuel-darko.github.io\/orixTrade\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js" id="wc-add-to-cart-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js" id="zoom-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.min.js" id="flexslider-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js" id="photoswipe-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js" id="photoswipe-ui-default-js"></script>
+<script type="text/javascript" id="wc-single-product-js-extra">
+/* <![CDATA[ */
+var wc_single_product_params = {"i18n_required_rating_text":"Please select a rating","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"1","zoom_options":[],"photoswipe_enabled":"1","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js" id="wc-single-product-js"></script>
+<script type="text/javascript" id="wc-geolocation-js-extra">
+/* <![CDATA[ */
+var wc_geolocation_params = {"wc_ajax_url":"\/?wc-ajax=%%endpoint%%","home_url":"https:\/\/PLACEHOLDER.wpsho","is_available":"1","hash":"1b5c8f7f0278"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/js/frontend/geolocation.min.js" id="wc-geolocation-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js" id="js-cookie-js"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js" id="woocommerce-js"></script>
+<script type="text/javascript" id="wc-cart-fragments-js-extra">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_396298ac83cd4333884cef26cfc9b4ee","fragment_name":"wc_fragments_396298ac83cd4333884cef26cfc9b4ee","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js" id="wc-cart-fragments-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-includes/js/imagesloaded.min.js" id="imagesloaded-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/js/third/woo/woo-scripts.min.js" id="oceanwp-woocommerce-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/js/third/magnific-popup.min.js" id="magnific-popup-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/js/third/lightbox.min.js" id="oceanwp-lightbox-js"></script>
+<script type="text/javascript" id="oceanwp-main-js-extra">
+/* <![CDATA[ */
+var oceanwpLocalize = {"isRTL":"","menuSearchStyle":"disabled","sidrSource":"#sidr-close, #mobile-nav, #mobile-menu-search","sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select","wooCartStyle":"drop_down","is_cart":"","cart_url":"https:\/\/emmanuel-darko.github.io\/orixTrade\/cart\/","ajax_url":"https:\/\/emmanuel-darko.github.io\/orixTrade\/wp-admin\/admin-ajax.php","login_reminder_enabled":"1","is_logged_in":"","no_account_btn":"I don\u2019t have an account","next":"Next","cart_redirect_after_add":"no","view_cart":"View cart","floating_bar":"on","grouped_text":"View products"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/js/main.min.js" id="oceanwp-main-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/js/third/woo/woo-hover-style.min.js" id="oceanwp-woo-hover-style-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/js/third/woo/woo-quick-view.min.js" id="oceanwp-woo-quick-view-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-includes/js/underscore.min.js" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-includes/js/wp-util.min.js" id="wp-util-js"></script>
+<script type="text/javascript" id="wc-add-to-cart-variation-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js" id="wc-add-to-cart-variation-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/js/third/woo/woo-ajax-add-to-cart.min.js" id="oceanwp-woo-ajax-addtocart-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/js/third/woo/woo-floating-bar.min.js" id="oceanwp-woo-floating-bar-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/themes/oceanwp/assets/js/third/woo/woo-mini-cart.min.js" id="oceanwp-woo-mini-cart-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js" id="elementskit-framework-js-frontend-js"></script>
+<script type="text/javascript" id="elementskit-framework-js-frontend-js-after">
+        //console.log(window.elementskit);
+
+		var elementskit = {
+            resturl: 'https://emmanuel-darko.github.io/orixTrade/wp-json/elementskit/v1/',
+        }
+
+        //console.log(window.elementskit);
+		
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/elementskit-lite/widgets/init/assets/js/nav-menu.js" id="ekit-nav-menu-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/elementskit-lite/widgets/init/assets/js/ui-slim.min.js" id="ekit-slim-ui-js"></script>
+<script type="text/javascript" id="woo-variation-swatches-js-extra">
+/* <![CDATA[ */
+var woo_variation_swatches_options = {"is_product_page":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woo-variation-swatches/assets/js/frontend.min.js" id="woo-variation-swatches-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/ocean-product-sharing/assets/js/social.min.js" id="ops-product-share-script-js"></script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/ocean-social-sharing/assets/js/social.min.js" id="oss-social-share-script-js"></script>
+
+<script type="text/javascript" data-namespace="paypal_sdk" src="https://www.paypal.com/sdk/js?client-id=AQbghYd-7mRPyimEriYScIgTnYUsLnr5wVnPnmfPaSzwKrUe3qNzfEc5hXr9Ucf_JG_HFAZpJMJYXMuk&intent=capture&locale=en_US&components=buttons,funding-eligibility&commit=false&currency=USD" id="paypal-checkout-sdk-js"></script>
+<script type="text/javascript" id="wc-gateway-ppec-smart-payment-buttons-js-extra">
+/* <![CDATA[ */
+var wc_ppec_context = {"use_checkout_js":"","environment":"production","locale":"en_US","page":"product","button_color":"gold","button_shape":"rect","button_label":"paypal","start_checkout_nonce":"61de2bd750","start_checkout_url":"\/?wc-ajax=wc_ppec_start_checkout","return_url":"https:\/\/emmanuel-darko.github.io\/orixTrade\/checkout\/","cancel_url":"","generic_error_msg":"An error occurred while processing your PayPal payment. Please contact the store owner for assistance.","button_layout":"horizontal","button_size":"responsive","allowed_methods":[],"disallowed_methods":["CREDIT"],"mini_cart_button_layout":"vertical","mini_cart_button_size":"responsive","mini_cart_button_label":"paypal","mini_cart_disallowed_methods":["CARD","CREDIT"]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce-gateway-paypal-express-checkout/assets/js/wc-gateway-ppec-smart-payment-buttons.js" id="wc-gateway-ppec-smart-payment-buttons-js"></script>
+<script type="text/javascript" id="wc-gateway-ppec-generate-cart-js-extra">
+/* <![CDATA[ */
+var wc_ppec_generate_cart_context = {"generate_cart_nonce":"128d18dd52","ajaxurl":"\/?wc-ajax=wc_ppec_generate_cart"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://emmanuel-darko.github.io/orixTrade/wp-content/plugins/woocommerce-gateway-paypal-express-checkout/assets/js/wc-gateway-ppec-generate-cart.js" id="wc-gateway-ppec-generate-cart-js"></script>
+
+			<script type="text/javascript">
+
+				/* OceanWP JS */
+				(function(){var doc=document.documentElement;var w=window;var prevScroll=w.scrollY||doc.scrollTop;var curScroll;var direction=0;var prevDirection=0;var header=document.getElementById('site-header');var checkScroll=function(){curScroll=w.scrollY||doc.scrollTop;if(curScroll>prevScroll){direction=2;}
+else if(curScroll<prevScroll){direction=1;}
+if(direction!==prevDirection){toggleHeader(direction,curScroll);}
+prevScroll=curScroll;};var toggleHeader=function(direction,curScroll){if(direction===2&&curScroll>52){header.classList.add('hide');prevDirection=direction;}
+else if(direction===1){header.classList.remove('hide');prevDirection=direction;}};window.addEventListener('scroll',checkScroll);})();
+			</script>
+
+		</body>
+</html>
